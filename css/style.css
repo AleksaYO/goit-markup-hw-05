@@ -145,15 +145,16 @@ section {
   color: var(--hover-color);
 }
 
-.current .current-form {
+.current::after {
+  content: "";
   position: absolute;
-
-  width: 100%;
-  height: 4px;
-  bottom: 0px;
-
   background-color: var(--hover-color);
   border-radius: 2px;
+  width: 100%;
+  height: 4px;
+
+  left: 0;
+  bottom: 0;
 }
 
 /* --------------------------------------------- Герой --------------------------------------------- */
@@ -250,14 +251,18 @@ section {
   top: 0;
   left: 0;
 
+  opacity: 1;
   background-color: rgba(0, 0, 0, 0.2);
+  transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.is-hidden {
-  visibility: 0;
+.backdrop.is-hidden {
+  visibility: none;
   opacity: 0;
   pointer-events: none;
 }
+
+
 
 .modal-button {
   position: absolute;
@@ -274,7 +279,7 @@ section {
 
   align-items: center;
   justify-content: center;
-  
+
   transition-duration: 250ms;
 }
 
@@ -282,6 +287,7 @@ section {
 .modal-button:focus {
   border: 2px solid var(--hover-color);
   transition-duration: 250ms;
+  fill: var(--hover-color);
 }
 
 .modal {
@@ -297,6 +303,10 @@ section {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+
+
+
+
 /* --------------------------------------------- Чому ми? --------------------------------------------- */
 .visually-hidden {
   position: absolute;
