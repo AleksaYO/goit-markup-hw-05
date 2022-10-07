@@ -92,12 +92,15 @@ section {
   display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition-duration: 250ms;
 }
 .link:hover {
   color: var(--hover-color);
+  transition-duration: 250ms;
 }
 .link:focus {
   color: var(--hover-color);
+  transition-duration: 250ms;
 }
 .header-adress {
   list-style: none;
@@ -125,15 +128,18 @@ section {
   display: flex;
   align-items: center;
   gap: 10px;
+  transition-duration: 250ms;
 }
 
 .header-adress-link:hover {
   color: var(--hover-color);
   fill: var(--hover-color);
+  transition-duration: 250ms;
 }
 .header-adress-link:focus {
   color: var(--hover-color);
   fill: var(--hover-color);
+  transition-duration: 250ms;
 }
 .current {
   color: var(--hover-color);
@@ -218,6 +224,7 @@ section {
   background: var(--background-btn);
   border-radius: 4px;
   border: none;
+  transition-duration: 250ms;
 }
 .btn:hover {
   background-color: var(--hover-color);
@@ -225,12 +232,69 @@ section {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  transition-duration: 250ms;
 }
 .btn:focus {
   background-color: var(--hover-color);
   color: var(--secondary-hover);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  transition-duration: 250ms;
+}
+
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.is-hidden {
+  visibility: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  background: #ffffff;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+
+  align-items: center;
+  justify-content: center;
+  
+  transition-duration: 250ms;
+}
+
+.modal-button:hover,
+.modal-button:focus {
+  border: 2px solid var(--hover-color);
+  transition-duration: 250ms;
+}
+
+.modal {
+  position: relative;
+  width: 528px;
+  height: 581px;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 /* --------------------------------------------- Чому ми? --------------------------------------------- */
@@ -393,16 +457,19 @@ section {
   justify-content: center;
   border-radius: 50%;
   fill: var(--icon-color);
+  transition-duration: 250ms;
 }
 
 .team-icon-link:hover {
   fill: var(--secondary-hover);
   background-color: var(--hover-color);
+  transition-duration: 250ms;
 }
 
 .team-icon-link:focus {
   fill: var(--secondary-hover);
   background-color: var(--hover-color);
+  transition-duration: 250ms;
 }
 
 .team-h-two {
@@ -469,16 +536,19 @@ section {
   border-radius: 4px;
   width: 170px;
   height: 92px;
+  transition-duration: 250ms;
 }
 
 .client-icon-link:hover {
   fill: var(--hover-color);
   border: 1px solid var(--hover-color);
+  transition-duration: 250ms;
 }
 
 .client-icon-link:focus {
   fill: var(--hover-color);
   border: 1px solid var(--hover-color);
+  transition-duration: 250ms;
 }
 
 /* --------------------------------------------- Укриття --------------------------------------------- */
@@ -524,14 +594,17 @@ section {
   justify-content: center;
   border-radius: 50%;
   fill: var(--secondary-hover);
+  transition-duration: 250ms;
 }
 
 .footer-icon-link:hover {
   background: var(--hover-color);
+  transition-duration: 250ms;
 }
 
 .footer-icon-link:focus {
   background: var(--hover-color);
+  transition-duration: 250ms;
 }
 
 .footer-logo {
@@ -564,12 +637,15 @@ section {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-hover);
+  transition-duration: 250ms;
 }
 .map:focus {
   color: var(--hover-color);
+  transition-duration: 250ms;
 }
 .map:hover {
   color: var(--hover-color);
+  transition-duration: 250ms;
 }
 .footer-adress-link {
   font-family: "Roboto";
@@ -578,12 +654,15 @@ section {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  transition-duration: 250ms;
 }
 .footer-adress-link:focus {
   color: var(--hover-color);
+  transition-duration: 250ms;
 }
 .footer-adress-link:hover {
   color: var(--hover-color);
+  transition-duration: 250ms;
 }
 /* --------------------------------------------- Страница Портфолио --------------------------------------------- */
 
@@ -629,16 +708,19 @@ section {
 
 .works-link {
   display: inline-block;
+  transition-duration: 250ms;
 }
 
 .works-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition-duration: 250ms;
 }
 
 .works-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition-duration: 250ms;
 }
 
 .works-list-btn {
@@ -676,4 +758,37 @@ section {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--adress-color);
+}
+
+.works-link:hover .works-text-box {
+  transform: translateY(0);
+}
+
+.works-link:focus .works-text-box {
+  transform: translateY(0);
+}
+
+.box {
+  position: relative;
+  overflow: hidden;
+}
+
+.works-text-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 24px 63px;
+
+  font-family: "Roboto" sans-serif;
+  font-weight: 400;
+  font-size: 1.55;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

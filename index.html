@@ -52,7 +52,7 @@
     <!-- Герой -->
     <section class="hero">
         <h1 class="hero-h-one">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="hero-btn">Замовити послугу</button>
+        <button type="button" data-modal-open class="hero-btn">Замовити послугу</button>
     </section>
 
 <!-- Чому ми? -->
@@ -372,5 +372,15 @@
             </div>
         </div>
     </footer>
+    <div data-modal class="backdrop is-hidden">
+        <div class="modal">
+            <button type="button" data-modal-close class="modal-button">
+                <svg width="11" heigth="11">
+                    <use href="./images/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./modal.js"></script>
 </body>
 </html>
