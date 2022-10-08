@@ -8,6 +8,7 @@
   --icon-color: #afb1b8;
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 h1,
 h2,
 h3,
@@ -205,12 +206,15 @@ section {
   width: 216px;
   height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms var(--cubic), box-shadow 250ms var(--cubic);
 }
 .hero-btn:hover {
   background: #188ce8;
+  transition: background-color 250ms var(--cubic), box-shadow 250ms var(--cubic);
 }
 .hero-btn:focus {
   background: #188ce8;
+  transition: background-color 250ms var(--cubic), box-shadow 250ms var(--cubic);
 }
 .btn {
   cursor: pointer;
@@ -289,7 +293,7 @@ section {
 .modal-button:hover,
 .modal-button:focus {
   border: 2px solid var(--hover-color);
-  transition-duration: 250ms;
+  transition: border 250ms var(--cubic), fill 250ms var(--cubic);
   fill: var(--hover-color);
 }
 
@@ -469,19 +473,19 @@ section {
   justify-content: center;
   border-radius: 50%;
   fill: var(--icon-color);
-  transition-duration: 250ms;
+  transition: background-color 250ms var(--cubic), fill 250ms var(--cubic);
 }
 
 .team-icon-link:hover {
   fill: var(--secondary-hover);
   background-color: var(--hover-color);
-  transition-duration: 250ms;
+  transition: background-color 250ms var(--cubic), fill 250ms var(--cubic);
 }
 
 .team-icon-link:focus {
   fill: var(--secondary-hover);
   background-color: var(--hover-color);
-  transition-duration: 250ms;
+  transition: background-color 250ms var(--cubic), fill 250ms var(--cubic);
 }
 
 .team-h-two {
@@ -548,19 +552,19 @@ section {
   border-radius: 4px;
   width: 170px;
   height: 92px;
-  transition-duration: 250ms;
+  transition: fill 250ms var(--cubic), border 250ms var(--cubic);
 }
 
 .client-icon-link:hover {
   fill: var(--hover-color);
   border: 1px solid var(--hover-color);
-  transition-duration: 250ms;
+  transition: fill 250ms var(--cubic), border 250ms var(--cubic);
 }
 
 .client-icon-link:focus {
   fill: var(--hover-color);
   border: 1px solid var(--hover-color);
-  transition-duration: 250ms;
+  transition: fill 250ms var(--cubic), border 250ms var(--cubic);
 }
 
 /* --------------------------------------------- Укриття --------------------------------------------- */
@@ -606,17 +610,17 @@ section {
   justify-content: center;
   border-radius: 50%;
   fill: var(--secondary-hover);
-  transition-duration: 250ms;
+  transition: background-color 250ms var(--cubic);
 }
 
 .footer-icon-link:hover {
   background: var(--hover-color);
-  transition-duration: 250ms;
+  transition: background-color 250ms var(--cubic);
 }
 
 .footer-icon-link:focus {
   background: var(--hover-color);
-  transition-duration: 250ms;
+  transition: background-color 250ms var(--cubic);
 }
 
 .footer-logo {
@@ -649,15 +653,15 @@ section {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-hover);
-  transition-duration: 250ms;
+  transition: color 250ms var(--cubic);
 }
 .map:focus {
   color: var(--hover-color);
-  transition-duration: 250ms;
+  transition: color 250ms var(--cubic);
 }
 .map:hover {
   color: var(--hover-color);
-  transition-duration: 250ms;
+  transition: color 250ms var(--cubic);
 }
 .footer-adress-link {
   font-family: "Roboto";
@@ -666,15 +670,15 @@ section {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  transition-duration: 250ms;
+  transition: color 250ms var(--cubic);
 }
 .footer-adress-link:focus {
   color: var(--hover-color);
-  transition-duration: 250ms;
+  transition: color 250ms var(--cubic);
 }
 .footer-adress-link:hover {
   color: var(--hover-color);
-  transition-duration: 250ms;
+  transition: color 250ms var(--cubic);
 }
 /* --------------------------------------------- Страница Портфолио --------------------------------------------- */
 
@@ -720,19 +724,19 @@ section {
 
 .works-link {
   display: inline-block;
-  transition-duration: 250ms;
+  transition: box-shadow 250ms var(--cubic);
 }
 
 .works-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition-duration: 250ms;
+  transition: box-shadow 250ms var(--cubic);
 }
 
 .works-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition-duration: 250ms;
+  transition: box-shadow 250ms var(--cubic);
 }
 
 .works-list-btn {
